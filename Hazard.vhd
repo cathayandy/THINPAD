@@ -27,7 +27,7 @@ begin
                     '0';
   DataOutBF01(0) <= '1' when((TBRE and TSRE) = '1') else
                     '0';
-  HazardCtrlOut <= '1' when((MemWrCtrl='1' and ((PC>="1000000000000000" and MemAddr>="1000000000000000") or (PC<"1000000000000000" and MemAddr<"1000000000000000"))) or (MemRdCtrl='1' and ((PC>="1000000000000000" and MemAddr>="1000000000000000" and PC/=MemAddr) or (PC<"1000000000000000" and MemAddr<"1000000000000000" and PC/=MemAddr))) or ((MemWrRegCtrl=ReadReg1Ctrl or MemWrRegCtrl=ReadReg2Ctrl) and MemWrRegCtrl/="1111")) else
+  HazardCtrlOut <= '1' when((MemWrCtrl='1' and ((PC>="1000000000000000" and MemAddr>="1000000000000000") or (PC<"1000000000000000" and MemAddr<"1000000000000000"))) or (MemRdCtrl='1' and ((PC>="1000000000000000" and MemAddr>="1000000000000000" and PC/=MemAddr) or (PC<"1000000000000000" and MemAddr<"1000000000000000" and PC/=MemAddr))) or (MemRdCtrl='1' and (MemWrRegCtrl=ReadReg1Ctrl or MemWrRegCtrl=ReadReg2Ctrl) and MemWrRegCtrl/="1111")) else
                    '0';
   Ram1Addr(17 downto 16) <= "00";
   Ram1Addr(15 downto 0) <= MemAddr when((MemWrCtrl='1' or MemRdCtrl='1') and MemAddr>="1000000000000000") else
