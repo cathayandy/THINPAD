@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\Nikifor Zhao\CPU\impact.xsl
+OUTFILE=C:\Users\Nikifor Zhao\CPU\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\Nikifor Zhao\CPU
+LICENSE=iMPACT
+USER_INFO=iMPACT

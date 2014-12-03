@@ -1,0 +1,96 @@
+V3 72
+FL "C:/Users/Nikifor Zhao/CPU/ALU.vhd" 2014/12/02.13:33:18 P.20131013
+EN work/ALU 1417560288 FL "C:/Users/Nikifor Zhao/CPU/ALU.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/std_logic_arith 1370735608
+AR work/ALU/Behavioral 1417560289 \
+      FL "C:/Users/Nikifor Zhao/CPU/ALU.vhd" EN work/ALU 1417560288
+FL "C:/Users/Nikifor Zhao/CPU/Branch.vhd" 2014/12/03.02:33:35 P.20131013
+EN work/Branch 1417560296 FL "C:/Users/Nikifor Zhao/CPU/Branch.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/std_logic_arith 1370735608
+AR work/Branch/Behavioral 1417560297 \
+      FL "C:/Users/Nikifor Zhao/CPU/Branch.vhd" EN work/Branch 1417560296
+FL "C:/Users/Nikifor Zhao/CPU/Control.vhd" 2014/12/02.15:29:31 P.20131013
+EN work/Control 1417560280 FL "C:/Users/Nikifor Zhao/CPU/Control.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/std_logic_arith 1370735608
+AR work/Control/Behavioral 1417560281 \
+      FL "C:/Users/Nikifor Zhao/CPU/Control.vhd" EN work/Control 1417560280
+FL "C:/Users/Nikifor Zhao/CPU/CPU.vhd" 2014/12/03.06:44:29 P.20131013
+EN work/CPU 1417560300 FL "C:/Users/Nikifor Zhao/CPU/CPU.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/std_logic_arith 1370735608
+AR work/CPU/bhv 1417560301 \
+      FL "C:/Users/Nikifor Zhao/CPU/CPU.vhd" EN work/CPU 1417560300 CP PC CP IM \
+      CP REG1 CP Control CP RegisterHeap CP Extend CP REG2 CP ALU CP REG3 CP REG4 \
+      CP Forward CP Branch CP Hazard
+FL "C:/Users/Nikifor Zhao/CPU/Extend.vhd" 2014/12/01.21:49:00 P.20131013
+EN work/Extend 1417560284 FL "C:/Users/Nikifor Zhao/CPU/Extend.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/std_logic_arith 1370735608
+AR work/Extend/Behavioral 1417560285 \
+      FL "C:/Users/Nikifor Zhao/CPU/Extend.vhd" EN work/Extend 1417560284
+FL "C:/Users/Nikifor Zhao/CPU/Forward.vhd" 2014/12/02.23:57:00 P.20131013
+EN work/Forward 1417560294 FL "C:/Users/Nikifor Zhao/CPU/Forward.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/Forward/Behavioral 1417560295 \
+      FL "C:/Users/Nikifor Zhao/CPU/Forward.vhd" EN work/Forward 1417560294
+FL "C:/Users/Nikifor Zhao/CPU/Hazard.vhd" 2014/12/03.05:44:49 P.20131013
+EN work/Hazard 1417560298 FL "C:/Users/Nikifor Zhao/CPU/Hazard.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/Hazard/bhv 1417560299 \
+      FL "C:/Users/Nikifor Zhao/CPU/Hazard.vhd" EN work/Hazard 1417560298
+FL "C:/Users/Nikifor Zhao/CPU/IM.vhd" 2014/12/03.00:40:19 P.20131013
+EN work/IM 1417560276 FL "C:/Users/Nikifor Zhao/CPU/IM.vhd" PB ieee/std_logic_1164 1370735607 \
+      PB ieee/std_logic_arith 1370735608 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/IM/bhv 1417560277 \
+      FL "C:/Users/Nikifor Zhao/CPU/IM.vhd" EN work/IM 1417560276
+FL "C:/Users/Nikifor Zhao/CPU/PC.vhd" 2014/12/03.06:34:09 P.20131013
+EN work/PC 1417560274 FL "C:/Users/Nikifor Zhao/CPU/PC.vhd" PB ieee/std_logic_1164 1370735607
+AR work/PC/Behavioral 1417560275 \
+      FL "C:/Users/Nikifor Zhao/CPU/PC.vhd" EN work/PC 1417560274
+FL "C:/Users/Nikifor Zhao/CPU/REG1.vhd" 2014/12/03.06:34:31 P.20131013
+EN work/REG1 1417560278 FL "C:/Users/Nikifor Zhao/CPU/REG1.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/REG1/Behavioral 1417560279 \
+      FL "C:/Users/Nikifor Zhao/CPU/REG1.vhd" EN work/REG1 1417560278
+FL "C:/Users/Nikifor Zhao/CPU/REG2.vhd" 2014/12/03.06:34:39 P.20131013
+EN work/REG2 1417560286 FL "C:/Users/Nikifor Zhao/CPU/REG2.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/REG2/Behavioral 1417560287 \
+      FL "C:/Users/Nikifor Zhao/CPU/REG2.vhd" EN work/REG2 1417560286
+FL "C:/Users/Nikifor Zhao/CPU/REG3.vhd" 2014/12/03.02:23:05 P.20131013
+EN work/REG3 1417560290 FL "C:/Users/Nikifor Zhao/CPU/REG3.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/REG3/Behavioral 1417560291 \
+      FL "C:/Users/Nikifor Zhao/CPU/REG3.vhd" EN work/REG3 1417560290
+FL "C:/Users/Nikifor Zhao/CPU/REG4.vhd" 2014/12/02.23:57:00 P.20131013
+EN work/REG4 1417560292 FL "C:/Users/Nikifor Zhao/CPU/REG4.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/REG4/Behavioral 1417560293 \
+      FL "C:/Users/Nikifor Zhao/CPU/REG4.vhd" EN work/REG4 1417560292
+FL "C:/Users/Nikifor Zhao/CPU/RegisterHeap.vhd" 2014/12/02.14:34:31 P.20131013
+EN work/RegisterHeap 1417560282 FL "C:/Users/Nikifor Zhao/CPU/RegisterHeap.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/std_logic_arith 1370735608
+AR work/RegisterHeap/Behavioral 1417560283 \
+      FL "C:/Users/Nikifor Zhao/CPU/RegisterHeap.vhd" EN work/RegisterHeap 1417560282
+FL "E:/homework/Computer Organization/CPU/ALU.vhd" 2014/12/02.13:33:18 P.20131013
+FL "E:/homework/Computer Organization/CPU/Branch.vhd" 2014/12/03.00:44:24 P.20131013
+FL "E:/homework/Computer Organization/CPU/Control.vhd" 2014/12/02.15:29:31 P.20131013
+FL "E:/homework/Computer Organization/CPU/CPU.vhd" 2014/12/03.01:23:45 P.20131013
+FL "E:/homework/Computer Organization/CPU/Extend.vhd" 2014/12/01.21:49:00 P.20131013
+FL "E:/homework/Computer Organization/CPU/Forward.vhd" 2014/12/02.23:57:00 P.20131013
+FL "E:/homework/Computer Organization/CPU/Hazard.vhd" 2014/12/03.00:58:08 P.20131013
+FL "E:/homework/Computer Organization/CPU/IM.vhd" 2014/12/03.00:40:19 P.20131013
+FL "E:/homework/Computer Organization/CPU/PC.vhd" 2014/12/02.23:57:00 P.20131013
+FL "E:/homework/Computer Organization/CPU/RamToIM.vhd" 2014/12/03.00:40:19 P.20131013
+AR work/RamToIM/bhv 1417538307 \
+      FL "E:/homework/Computer Organization/CPU/RamToIM.vhd" EN work/RamToIM 1417538306
+FL "E:/homework/Computer Organization/CPU/REG1.vhd" 2014/12/02.23:57:00 P.20131013
+FL "E:/homework/Computer Organization/CPU/REG2.vhd" 2014/12/02.23:57:00 P.20131013
+FL "E:/homework/Computer Organization/CPU/REG3.vhd" 2014/12/02.23:57:00 P.20131013
+FL "E:/homework/Computer Organization/CPU/REG4.vhd" 2014/12/02.23:57:00 P.20131013
+FL "E:/homework/Computer Organization/CPU/RegisterHeap.vhd" 2014/12/02.14:34:31 P.20131013

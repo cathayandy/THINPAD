@@ -1,0 +1,173 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf
+
+Design file:              CPU.ncd
+Physical constraint file: CPU.pcf
+Device,package,speed:     xc3s1200e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+RDN         |   20.172(R)|clk_IBUF          |   0.000|
+Ram1Addr<0> |   13.638(R)|clk_IBUF          |   0.000|
+Ram1Addr<1> |   14.374(R)|clk_IBUF          |   0.000|
+Ram1Addr<2> |   13.369(R)|clk_IBUF          |   0.000|
+Ram1Addr<3> |   14.150(R)|clk_IBUF          |   0.000|
+Ram1Addr<4> |   13.303(R)|clk_IBUF          |   0.000|
+Ram1Addr<5> |   13.825(R)|clk_IBUF          |   0.000|
+Ram1Addr<6> |   14.096(R)|clk_IBUF          |   0.000|
+Ram1Addr<7> |   13.071(R)|clk_IBUF          |   0.000|
+Ram1Addr<8> |   13.454(R)|clk_IBUF          |   0.000|
+Ram1Addr<9> |   12.185(R)|clk_IBUF          |   0.000|
+Ram1Addr<10>|   13.750(R)|clk_IBUF          |   0.000|
+Ram1Addr<11>|   13.164(R)|clk_IBUF          |   0.000|
+Ram1Addr<12>|   13.808(R)|clk_IBUF          |   0.000|
+Ram1Addr<13>|   12.909(R)|clk_IBUF          |   0.000|
+Ram1Addr<14>|   13.202(R)|clk_IBUF          |   0.000|
+Ram1Addr<15>|   13.172(R)|clk_IBUF          |   0.000|
+Ram1Data<0> |   15.430(R)|clk_IBUF          |   0.000|
+Ram1Data<1> |   15.476(R)|clk_IBUF          |   0.000|
+Ram1Data<2> |   15.732(R)|clk_IBUF          |   0.000|
+Ram1Data<3> |   15.179(R)|clk_IBUF          |   0.000|
+Ram1Data<4> |   15.978(R)|clk_IBUF          |   0.000|
+Ram1Data<5> |   14.921(R)|clk_IBUF          |   0.000|
+Ram1Data<6> |   14.402(R)|clk_IBUF          |   0.000|
+Ram1Data<7> |   14.692(R)|clk_IBUF          |   0.000|
+Ram1Data<8> |   14.651(R)|clk_IBUF          |   0.000|
+Ram1Data<9> |   14.940(R)|clk_IBUF          |   0.000|
+Ram1Data<10>|   13.888(R)|clk_IBUF          |   0.000|
+Ram1Data<11>|   14.170(R)|clk_IBUF          |   0.000|
+Ram1Data<12>|   14.147(R)|clk_IBUF          |   0.000|
+Ram1Data<13>|   14.436(R)|clk_IBUF          |   0.000|
+Ram1Data<14>|   13.099(R)|clk_IBUF          |   0.000|
+Ram1Data<15>|   12.850(R)|clk_IBUF          |   0.000|
+Ram1EN      |   18.819(R)|clk_IBUF          |   0.000|
+Ram1OE      |   17.315(R)|clk_IBUF          |   0.000|
+Ram1WE      |   16.812(R)|clk_IBUF          |   0.000|
+Ram2Addr<0> |   14.451(R)|clk_IBUF          |   0.000|
+Ram2Addr<1> |   14.459(R)|clk_IBUF          |   0.000|
+Ram2Addr<2> |   13.351(R)|clk_IBUF          |   0.000|
+Ram2Addr<3> |   14.438(R)|clk_IBUF          |   0.000|
+Ram2Addr<4> |   13.697(R)|clk_IBUF          |   0.000|
+Ram2Addr<5> |   13.985(R)|clk_IBUF          |   0.000|
+Ram2Addr<6> |   16.727(R)|clk_IBUF          |   0.000|
+Ram2Addr<7> |   14.842(R)|clk_IBUF          |   0.000|
+Ram2Addr<8> |   15.346(R)|clk_IBUF          |   0.000|
+Ram2Addr<9> |   13.555(R)|clk_IBUF          |   0.000|
+Ram2Addr<10>|   17.982(R)|clk_IBUF          |   0.000|
+Ram2Addr<11>|   14.443(R)|clk_IBUF          |   0.000|
+Ram2Addr<12>|   15.274(R)|clk_IBUF          |   0.000|
+Ram2Addr<13>|   15.982(R)|clk_IBUF          |   0.000|
+Ram2Addr<14>|   15.546(R)|clk_IBUF          |   0.000|
+Ram2Data<0> |   13.212(R)|clk_IBUF          |   0.000|
+Ram2Data<1> |   13.438(R)|clk_IBUF          |   0.000|
+Ram2Data<2> |   12.867(R)|clk_IBUF          |   0.000|
+Ram2Data<3> |   12.622(R)|clk_IBUF          |   0.000|
+Ram2Data<4> |   13.494(R)|clk_IBUF          |   0.000|
+Ram2Data<5> |   12.859(R)|clk_IBUF          |   0.000|
+Ram2Data<6> |   13.697(R)|clk_IBUF          |   0.000|
+Ram2Data<7> |   13.468(R)|clk_IBUF          |   0.000|
+Ram2Data<8> |   14.314(R)|clk_IBUF          |   0.000|
+Ram2Data<9> |   14.938(R)|clk_IBUF          |   0.000|
+Ram2Data<10>|   12.604(R)|clk_IBUF          |   0.000|
+Ram2Data<11>|   13.162(R)|clk_IBUF          |   0.000|
+Ram2Data<12>|   14.323(R)|clk_IBUF          |   0.000|
+Ram2Data<13>|   15.260(R)|clk_IBUF          |   0.000|
+Ram2Data<14>|   12.893(R)|clk_IBUF          |   0.000|
+Ram2Data<15>|   14.859(R)|clk_IBUF          |   0.000|
+Ram2OE      |   13.145(R)|clk_IBUF          |   0.000|
+Ram2WE      |   13.023(R)|clk_IBUF          |   0.000|
+WRN         |   20.910(R)|clk_IBUF          |   0.000|
+dyp0<0>     |   18.483(R)|clk_IBUF          |   0.000|
+dyp0<1>     |   18.248(R)|clk_IBUF          |   0.000|
+dyp0<2>     |   19.084(R)|clk_IBUF          |   0.000|
+dyp0<3>     |   19.044(R)|clk_IBUF          |   0.000|
+dyp0<4>     |   18.256(R)|clk_IBUF          |   0.000|
+dyp0<5>     |   18.077(R)|clk_IBUF          |   0.000|
+dyp0<6>     |   18.367(R)|clk_IBUF          |   0.000|
+l<0>        |    9.455(R)|clk_IBUF          |   0.000|
+l<1>        |    9.139(R)|clk_IBUF          |   0.000|
+l<2>        |    9.610(R)|clk_IBUF          |   0.000|
+l<3>        |    9.525(R)|clk_IBUF          |   0.000|
+l<4>        |    9.228(R)|clk_IBUF          |   0.000|
+l<5>        |    9.522(R)|clk_IBUF          |   0.000|
+l<6>        |    8.867(R)|clk_IBUF          |   0.000|
+l<7>        |    8.852(R)|clk_IBUF          |   0.000|
+l<8>        |    8.997(R)|clk_IBUF          |   0.000|
+l<9>        |    8.950(R)|clk_IBUF          |   0.000|
+l<10>       |    8.343(R)|clk_IBUF          |   0.000|
+l<11>       |    8.599(R)|clk_IBUF          |   0.000|
+l<12>       |    8.307(R)|clk_IBUF          |   0.000|
+l<13>       |    8.674(R)|clk_IBUF          |   0.000|
+l<14>       |    9.308(R)|clk_IBUF          |   0.000|
+l<15>       |    9.142(R)|clk_IBUF          |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   14.616|    6.656|    7.029|         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk            |RDN            |   10.583|
+clk            |Ram1OE         |    9.241|
+clk            |Ram1WE         |    9.013|
+clk            |Ram2OE         |    8.562|
+clk            |Ram2WE         |    9.991|
+clk            |WRN            |   12.117|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Dec 03 06:52:35 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 195 MB
+
+
+

@@ -1,0 +1,893 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: CPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPU"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : CPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/PC.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/IM.vhd" in Library work.
+Architecture bhv of Entity im is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/REG1.vhd" in Library work.
+Architecture behavioral of Entity reg1 is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/Control.vhd" in Library work.
+Architecture behavioral of Entity control is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/RegisterHeap.vhd" in Library work.
+Architecture behavioral of Entity registerheap is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/Extend.vhd" in Library work.
+Architecture behavioral of Entity extend is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/REG2.vhd" in Library work.
+Architecture behavioral of Entity reg2 is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/REG3.vhd" in Library work.
+Architecture behavioral of Entity reg3 is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/REG4.vhd" in Library work.
+Architecture behavioral of Entity reg4 is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/Forward.vhd" in Library work.
+Architecture behavioral of Entity forward is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/Branch.vhd" in Library work.
+Architecture behavioral of Entity branch is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/Hazard.vhd" in Library work.
+Architecture bhv of Entity hazard is up to date.
+Compiling vhdl file "C:/Users/Nikifor Zhao/CPU/CPU.vhd" in Library work.
+Entity <cpu> compiled.
+Entity <cpu> (Architecture <bhv>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <CPU> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <PC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IM> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <REG1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Control> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RegisterHeap> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Extend> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <REG2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <REG3> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <REG4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Forward> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Branch> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Hazard> in library <work> (architecture <bhv>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <CPU> in library <work> (Architecture <bhv>).
+Entity <CPU> analyzed. Unit <CPU> generated.
+
+Analyzing Entity <PC> in library <work> (Architecture <behavioral>).
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing Entity <IM> in library <work> (Architecture <bhv>).
+Entity <IM> analyzed. Unit <IM> generated.
+
+Analyzing Entity <REG1> in library <work> (Architecture <behavioral>).
+Entity <REG1> analyzed. Unit <REG1> generated.
+
+Analyzing Entity <Control> in library <work> (Architecture <behavioral>).
+Entity <Control> analyzed. Unit <Control> generated.
+
+Analyzing Entity <RegisterHeap> in library <work> (Architecture <behavioral>).
+Entity <RegisterHeap> analyzed. Unit <RegisterHeap> generated.
+
+Analyzing Entity <Extend> in library <work> (Architecture <behavioral>).
+Entity <Extend> analyzed. Unit <Extend> generated.
+
+Analyzing Entity <REG2> in library <work> (Architecture <behavioral>).
+Entity <REG2> analyzed. Unit <REG2> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <REG3> in library <work> (Architecture <behavioral>).
+Entity <REG3> analyzed. Unit <REG3> generated.
+
+Analyzing Entity <REG4> in library <work> (Architecture <behavioral>).
+Entity <REG4> analyzed. Unit <REG4> generated.
+
+Analyzing Entity <Forward> in library <work> (Architecture <behavioral>).
+Entity <Forward> analyzed. Unit <Forward> generated.
+
+Analyzing Entity <Branch> in library <work> (Architecture <behavioral>).
+Entity <Branch> analyzed. Unit <Branch> generated.
+
+Analyzing Entity <Hazard> in library <work> (Architecture <bhv>).
+WARNING:Xst:819 - "C:/Users/Nikifor Zhao/CPU/Hazard.vhd" line 48: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <DataToDM>
+Entity <Hazard> analyzed. Unit <Hazard> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <PC>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/PC.vhd".
+WARNING:Xst:647 - Input <IntCtrl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <CurPC>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <IM>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/IM.vhd".
+Unit <IM> synthesized.
+
+
+Synthesizing Unit <REG1>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/REG1.vhd".
+WARNING:Xst:647 - Input <IntCtrl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <JumpCtrlOut>.
+    Found 11-bit register for signal <ImmOut>.
+    Found 16-bit register for signal <InsOut>.
+    Found 16-bit register for signal <NewPCOut>.
+    Summary:
+	inferred  28 D-type flip-flop(s).
+Unit <REG1> synthesized.
+
+
+Synthesizing Unit <Control>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/Control.vhd".
+    Found 4x9-bit ROM for signal <Ins_1_0$rom0000>.
+    Found 4x3-bit ROM for signal <ExtCtrl$mux0000> created at line 83.
+    Found 4-bit 4-to-1 multiplexer for signal <ReadReg2$mux0000> created at line 407.
+    Found 4-bit 4-to-1 multiplexer for signal <WriteReg$mux0000> created at line 407.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   8 Multiplexer(s).
+Unit <Control> synthesized.
+
+
+Synthesizing Unit <RegisterHeap>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/RegisterHeap.vhd".
+WARNING:Xst:647 - Input <RetPC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IntCode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IntCtrl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <IHOut> is never assigned. Tied to value 0000000000000000.
+    Found 16-bit 16-to-1 multiplexer for signal <Reg2Out>.
+    Found 16-bit 16-to-1 multiplexer for signal <Reg1Out>.
+    Found 16-bit register for signal <IH>.
+    Found 16-bit register for signal <R0>.
+    Found 16-bit register for signal <R1>.
+    Found 16-bit register for signal <R2>.
+    Found 16-bit register for signal <R3>.
+    Found 16-bit register for signal <R4>.
+    Found 16-bit register for signal <R5>.
+    Found 16-bit register for signal <R6>.
+    Found 16-bit register for signal <R7>.
+    Found 16-bit register for signal <RA>.
+    Found 16-bit register for signal <SP>.
+    Found 16-bit register for signal <T>.
+    Summary:
+	inferred 192 D-type flip-flop(s).
+	inferred  32 Multiplexer(s).
+Unit <RegisterHeap> synthesized.
+
+
+Synthesizing Unit <Extend>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/Extend.vhd".
+Unit <Extend> synthesized.
+
+
+Synthesizing Unit <REG2>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/REG2.vhd".
+WARNING:Xst:647 - Input <IntCtrl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <Reg1DataOut>.
+    Found 1-bit register for signal <JumpCtrlOut>.
+    Found 16-bit register for signal <ImmOut>.
+    Found 1-bit register for signal <RegWrSrcCtrlOut>.
+    Found 4-bit register for signal <ReadReg2CtrlOut>.
+    Found 2-bit register for signal <ALUSrcBCtrlOut>.
+    Found 4-bit register for signal <ReadReg1CtrlOut>.
+    Found 4-bit register for signal <ALUOpCtrlOut>.
+    Found 1-bit register for signal <MemWrCtrlOut>.
+    Found 2-bit register for signal <ALUSrcACtrlOut>.
+    Found 1-bit register for signal <PCSrcBCtrlOut>.
+    Found 1-bit register for signal <MemRdCtrlOut>.
+    Found 16-bit register for signal <Reg2DataOut>.
+    Found 4-bit register for signal <WriteRegCtrlOut>.
+    Found 1-bit register for signal <PCSrcACtrlOut>.
+    Found 16-bit register for signal <NewPCOut>.
+    Summary:
+	inferred  90 D-type flip-flop(s).
+Unit <REG2> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/ALU.vhd".
+    Found 16-bit addsub for signal <Res$addsub0000>.
+    Found 16-bit comparator equal for signal <Res$cmp_eq0008> created at line 38.
+    Found 16-bit comparator less for signal <Res$cmp_lt0000> created at line 44.
+    Found 16-bit shifter logical left for signal <Res$shift0004> created at line 32.
+    Found 16-bit shifter arithmetic right for signal <Res$shift0005> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <REG3>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/REG3.vhd".
+    Found 1-bit register for signal <RegWrSrcCtrlOut>.
+    Found 16-bit register for signal <ALUResOut>.
+    Found 1-bit register for signal <MemWrCtrlOut>.
+    Found 1-bit register for signal <MemRdCtrlOut>.
+    Found 16-bit register for signal <Reg2DataOut>.
+    Found 4-bit register for signal <WriteRegCtrlOut>.
+    Found 16-bit register for signal <NewPCOut>.
+    Summary:
+	inferred  55 D-type flip-flop(s).
+Unit <REG3> synthesized.
+
+
+Synthesizing Unit <REG4>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/REG4.vhd".
+    Found 1-bit register for signal <RegWrSrcCtrlOut>.
+    Found 16-bit register for signal <ALUResOut>.
+    Found 16-bit register for signal <MemDataOut>.
+    Found 4-bit register for signal <WriteRegCtrlOut>.
+    Summary:
+	inferred  37 D-type flip-flop(s).
+Unit <REG4> synthesized.
+
+
+Synthesizing Unit <Forward>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/Forward.vhd".
+    Found 4-bit comparator equal for signal <Reg1DataNew$cmp_eq0000> created at line 52.
+    Found 4-bit comparator equal for signal <Reg1DataNew$cmp_eq0001> created at line 46.
+    Found 4-bit comparator equal for signal <Reg2DataNew$cmp_eq0000> created at line 55.
+    Found 4-bit comparator equal for signal <Reg2DataNew$cmp_eq0001> created at line 49.
+    Summary:
+	inferred   4 Comparator(s).
+Unit <Forward> synthesized.
+
+
+Synthesizing Unit <Branch>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/Branch.vhd".
+    Found 1-bit xor2 for signal <BranchCtrlOut$xor0000> created at line 52.
+    Found 16-bit adder for signal <NewPCOut$share0000> created at line 52.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Branch> synthesized.
+
+
+Synthesizing Unit <Hazard>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/Hazard.vhd".
+WARNING:Xst:737 - Found 16-bit latch for signal <DataToIM>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <DataToREG4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16-bit tristate buffer for signal <Ram1Data>.
+    Found 16-bit tristate buffer for signal <Ram2Data>.
+    Found 16-bit comparator greatequal for signal <DataToIM$cmp_ge0000> created at line 40.
+    Found 16-bit comparator less for signal <DataToIM$cmp_lt0000> created at line 40.
+    Found 16-bit comparator less for signal <DataToREG4$cmp_lt0000> created at line 42.
+    Found 16-bit comparator greatequal for signal <DataToREG4$or0000>.
+    Found 4-bit comparator equal for signal <HazardCtrlOut$cmp_eq0000> created at line 30.
+    Found 4-bit comparator equal for signal <HazardCtrlOut$cmp_eq0001> created at line 30.
+    Found 16-bit comparator not equal for signal <HazardCtrlOut$cmp_ne0000> created at line 30.
+    Summary:
+	inferred   7 Comparator(s).
+	inferred  32 Tristate(s).
+Unit <Hazard> synthesized.
+
+
+Synthesizing Unit <CPU>.
+    Related source file is "C:/Users/Nikifor Zhao/CPU/CPU.vhd".
+WARNING:Xst:1780 - Signal <WBWrRegCtrl> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <MemWrRegCtrl> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <IntCode> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:646 - Signal <IHToInt> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16x7-bit ROM for signal <dyp0>.
+    Found 16-bit 4-to-1 multiplexer for signal <ALUSrcA>.
+    Found 16-bit 4-to-1 multiplexer for signal <ALUSrcB>.
+    Found 16-bit adder for signal <PCAdderRes>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <CPU> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 16x7-bit ROM                                          : 1
+ 4x3-bit ROM                                           : 1
+ 4x9-bit ROM                                           : 1
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 2
+ 16-bit addsub                                         : 1
+# Registers                                            : 44
+ 1-bit register                                        : 11
+ 11-bit register                                       : 1
+ 16-bit register                                       : 24
+ 2-bit register                                        : 2
+ 4-bit register                                        : 6
+# Latches                                              : 2
+ 16-bit latch                                          : 2
+# Comparators                                          : 13
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greatequal                          : 2
+ 16-bit comparator less                                : 3
+ 16-bit comparator not equal                           : 1
+ 4-bit comparator equal                                : 6
+# Multiplexers                                         : 6
+ 16-bit 16-to-1 multiplexer                            : 2
+ 16-bit 4-to-1 multiplexer                             : 2
+ 4-bit 4-to-1 multiplexer                              : 2
+# Logic shifters                                       : 2
+ 16-bit shifter arithmetic right                       : 1
+ 16-bit shifter logical left                           : 1
+# Tristates                                            : 2
+ 16-bit tristate buffer                                : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <JumpCtrlOut> (without init value) has a constant value of 0 in block <u4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <JumpCtrlOut> (without init value) has a constant value of 0 in block <u8>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 16x7-bit ROM                                          : 1
+ 4x3-bit ROM                                           : 1
+ 4x9-bit ROM                                           : 1
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 2
+ 16-bit addsub                                         : 1
+# Registers                                            : 434
+ Flip-Flops                                            : 434
+# Latches                                              : 2
+ 16-bit latch                                          : 2
+# Comparators                                          : 13
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greatequal                          : 2
+ 16-bit comparator less                                : 3
+ 16-bit comparator not equal                           : 1
+ 4-bit comparator equal                                : 6
+# Multiplexers                                         : 36
+ 1-bit 16-to-1 multiplexer                             : 32
+ 16-bit 4-to-1 multiplexer                             : 2
+ 4-bit 4-to-1 multiplexer                              : 2
+# Logic shifters                                       : 2
+ 16-bit shifter arithmetic right                       : 1
+ 16-bit shifter logical left                           : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <ImmOut_10> in Unit <REG1> is equivalent to the following FF/Latch, which will be removed : <InsOut_10> 
+INFO:Xst:2261 - The FF/Latch <ImmOut_9> in Unit <REG1> is equivalent to the following FF/Latch, which will be removed : <InsOut_9> 
+INFO:Xst:2261 - The FF/Latch <ImmOut_8> in Unit <REG1> is equivalent to the following FF/Latch, which will be removed : <InsOut_8> 
+INFO:Xst:2261 - The FF/Latch <ImmOut_7> in Unit <REG1> is equivalent to the following FF/Latch, which will be removed : <InsOut_7> 
+INFO:Xst:2261 - The FF/Latch <ImmOut_6> in Unit <REG1> is equivalent to the following FF/Latch, which will be removed : <InsOut_6> 
+INFO:Xst:2261 - The FF/Latch <ImmOut_5> in Unit <REG1> is equivalent to the following FF/Latch, which will be removed : <InsOut_5> 
+INFO:Xst:2261 - The FF/Latch <ImmOut_4> in Unit <REG1> is equivalent to the following FF/Latch, which will be removed : <InsOut_4> 
+INFO:Xst:2261 - The FF/Latch <ImmOut_0> in Unit <REG1> is equivalent to the following FF/Latch, which will be removed : <InsOut_0> 
+INFO:Xst:2261 - The FF/Latch <ImmOut_3> in Unit <REG1> is equivalent to the following FF/Latch, which will be removed : <InsOut_3> 
+INFO:Xst:2261 - The FF/Latch <ImmOut_2> in Unit <REG1> is equivalent to the following FF/Latch, which will be removed : <InsOut_2> 
+INFO:Xst:2261 - The FF/Latch <ImmOut_1> in Unit <REG1> is equivalent to the following FF/Latch, which will be removed : <InsOut_1> 
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: Res_shift0003<15>.
+
+Optimizing unit <CPU> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <Control> ...
+
+Optimizing unit <RegisterHeap> ...
+
+Optimizing unit <REG2> ...
+INFO:Xst:2261 - The FF/Latch <ImmOut_10> in Unit <REG2> is equivalent to the following 5 FFs/Latches, which will be removed : <ImmOut_11> <ImmOut_12> <ImmOut_13> <ImmOut_14> <ImmOut_15> 
+INFO:Xst:2261 - The FF/Latch <ImmOut_10> in Unit <REG2> is equivalent to the following 5 FFs/Latches, which will be removed : <ImmOut_11> <ImmOut_12> <ImmOut_13> <ImmOut_14> <ImmOut_15> 
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <REG3> ...
+
+Optimizing unit <REG4> ...
+
+Optimizing unit <Forward> ...
+
+Optimizing unit <Branch> ...
+
+Optimizing unit <REG1> ...
+WARNING:Xst:1710 - FF/Latch <u8/JumpCtrlOut> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u4/JumpCtrlOut> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <u10/NewPCOut_15> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_14> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_13> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_12> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_11> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_10> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_9> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_8> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_7> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_6> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_5> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <u10/NewPCOut_0> of sequential type is unconnected in block <CPU>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <u8/MemRdCtrlOut> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <u8/RegWrSrcCtrlOut> 
+INFO:Xst:2261 - The FF/Latch <u8/PCSrcACtrlOut> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <u8/PCSrcBCtrlOut> 
+INFO:Xst:2261 - The FF/Latch <u10/MemRdCtrlOut> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <u10/RegWrSrcCtrlOut> 
+Found area constraint ratio of 100 (+ 5) on block CPU, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 397
+ Flip-Flops                                            : 397
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CPU.ngr
+Top Level Output File Name         : CPU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 104
+
+Cell Usage :
+# BELS                             : 1541
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 15
+#      LUT2                        : 67
+#      LUT2_D                      : 4
+#      LUT2_L                      : 4
+#      LUT3                        : 413
+#      LUT3_D                      : 47
+#      LUT3_L                      : 6
+#      LUT4                        : 574
+#      LUT4_D                      : 47
+#      LUT4_L                      : 47
+#      MUXCY                       : 77
+#      MUXF5                       : 154
+#      MUXF6                       : 32
+#      VCC                         : 1
+#      XORCY                       : 48
+# FlipFlops/Latches                : 429
+#      FDC                         : 67
+#      FDCE                        : 117
+#      FDE_1                       : 192
+#      FDP                         : 8
+#      FDPE                        : 13
+#      LDCP                        : 32
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 104
+#      IBUF                        : 5
+#      IOBUF                       : 32
+#      OBUF                        : 67
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                      645  out of   8672     7%  
+ Number of Slice Flip Flops:            429  out of  17344     2%  
+ Number of 4 input LUTs:               1228  out of  17344     7%  
+ Number of IOs:                         104
+ Number of bonded IOBs:                 104  out of    250    41%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+u1/CurPC_15                        | NONE(u16/DataToIM_15)  | 16    |
+u10/ALUResOut_15                   | NONE(u16/DataToREG4_15)| 16    |
+clk                                | IBUF+BUFG              | 397   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------+------------------------+-------+
+Control Signal                                           | Buffer(FF name)        | Load  |
+---------------------------------------------------------+------------------------+-------+
+u1/rst_inv(u8/rst_inv1_INV_0:O)                          | NONE(u1/CurPC_0)       | 205   |
+u16/DataToIM_0__and0000(u16/DataToIM_0__and00001:O)      | NONE(u16/DataToIM_0)   | 1     |
+u16/DataToIM_0__and0001(u16/DataToIM_0__and00011:O)      | NONE(u16/DataToIM_0)   | 1     |
+u16/DataToIM_10__and0000(u16/DataToIM_10__and00001:O)    | NONE(u16/DataToIM_10)  | 1     |
+u16/DataToIM_10__and0001(u16/DataToIM_10__and00011:O)    | NONE(u16/DataToIM_10)  | 1     |
+u16/DataToIM_11__and0000(u16/DataToIM_11__and00001:O)    | NONE(u16/DataToIM_11)  | 1     |
+u16/DataToIM_11__and0001(u16/DataToIM_11__and00011:O)    | NONE(u16/DataToIM_11)  | 1     |
+u16/DataToIM_12__and0000(u16/DataToIM_12__and00001:O)    | NONE(u16/DataToIM_12)  | 1     |
+u16/DataToIM_12__and0001(u16/DataToIM_12__and00011:O)    | NONE(u16/DataToIM_12)  | 1     |
+u16/DataToIM_13__and0000(u16/DataToIM_13__and00001:O)    | NONE(u16/DataToIM_13)  | 1     |
+u16/DataToIM_13__and0001(u16/DataToIM_13__and00011:O)    | NONE(u16/DataToIM_13)  | 1     |
+u16/DataToIM_14__and0000(u16/DataToIM_14__and00001:O)    | NONE(u16/DataToIM_14)  | 1     |
+u16/DataToIM_14__and0001(u16/DataToIM_14__and00011:O)    | NONE(u16/DataToIM_14)  | 1     |
+u16/DataToIM_15__and0000(u16/DataToIM_15__and00001:O)    | NONE(u16/DataToIM_15)  | 1     |
+u16/DataToIM_15__and0001(u16/DataToIM_15__and00011:O)    | NONE(u16/DataToIM_15)  | 1     |
+u16/DataToIM_1__and0000(u16/DataToIM_1__and00001:O)      | NONE(u16/DataToIM_1)   | 1     |
+u16/DataToIM_1__and0001(u16/DataToIM_1__and00011:O)      | NONE(u16/DataToIM_1)   | 1     |
+u16/DataToIM_2__and0000(u16/DataToIM_2__and00001:O)      | NONE(u16/DataToIM_2)   | 1     |
+u16/DataToIM_2__and0001(u16/DataToIM_2__and00011:O)      | NONE(u16/DataToIM_2)   | 1     |
+u16/DataToIM_3__and0000(u16/DataToIM_3__and00001:O)      | NONE(u16/DataToIM_3)   | 1     |
+u16/DataToIM_3__and0001(u16/DataToIM_3__and00011:O)      | NONE(u16/DataToIM_3)   | 1     |
+u16/DataToIM_4__and0000(u16/DataToIM_4__and00001:O)      | NONE(u16/DataToIM_4)   | 1     |
+u16/DataToIM_4__and0001(u16/DataToIM_4__and00011:O)      | NONE(u16/DataToIM_4)   | 1     |
+u16/DataToIM_5__and0000(u16/DataToIM_5__and00001:O)      | NONE(u16/DataToIM_5)   | 1     |
+u16/DataToIM_5__and0001(u16/DataToIM_5__and00011:O)      | NONE(u16/DataToIM_5)   | 1     |
+u16/DataToIM_6__and0000(u16/DataToIM_6__and00001:O)      | NONE(u16/DataToIM_6)   | 1     |
+u16/DataToIM_6__and0001(u16/DataToIM_6__and00011:O)      | NONE(u16/DataToIM_6)   | 1     |
+u16/DataToIM_7__and0000(u16/DataToIM_7__and00001:O)      | NONE(u16/DataToIM_7)   | 1     |
+u16/DataToIM_7__and0001(u16/DataToIM_7__and00011:O)      | NONE(u16/DataToIM_7)   | 1     |
+u16/DataToIM_8__and0000(u16/DataToIM_8__and00001:O)      | NONE(u16/DataToIM_8)   | 1     |
+u16/DataToIM_8__and0001(u16/DataToIM_8__and00011:O)      | NONE(u16/DataToIM_8)   | 1     |
+u16/DataToIM_9__and0000(u16/DataToIM_9__and00001:O)      | NONE(u16/DataToIM_9)   | 1     |
+u16/DataToIM_9__and0001(u16/DataToIM_9__and00011:O)      | NONE(u16/DataToIM_9)   | 1     |
+u16/DataToREG4_0__and0000(u16/DataToREG4_0__and00001:O)  | NONE(u16/DataToREG4_0) | 1     |
+u16/DataToREG4_0__and0001(u16/DataToREG4_0__and00011:O)  | NONE(u16/DataToREG4_0) | 1     |
+u16/DataToREG4_10__and0000(u16/DataToREG4_10__and00001:O)| NONE(u16/DataToREG4_10)| 1     |
+u16/DataToREG4_10__and0001(u16/DataToREG4_10__and00011:O)| NONE(u16/DataToREG4_10)| 1     |
+u16/DataToREG4_11__and0000(u16/DataToREG4_11__and00001:O)| NONE(u16/DataToREG4_11)| 1     |
+u16/DataToREG4_11__and0001(u16/DataToREG4_11__and00011:O)| NONE(u16/DataToREG4_11)| 1     |
+u16/DataToREG4_12__and0000(u16/DataToREG4_12__and00001:O)| NONE(u16/DataToREG4_12)| 1     |
+u16/DataToREG4_12__and0001(u16/DataToREG4_12__and00011:O)| NONE(u16/DataToREG4_12)| 1     |
+u16/DataToREG4_13__and0000(u16/DataToREG4_13__and00001:O)| NONE(u16/DataToREG4_13)| 1     |
+u16/DataToREG4_13__and0001(u16/DataToREG4_13__and00011:O)| NONE(u16/DataToREG4_13)| 1     |
+u16/DataToREG4_14__and0000(u16/DataToREG4_14__and00001:O)| NONE(u16/DataToREG4_14)| 1     |
+u16/DataToREG4_14__and0001(u16/DataToREG4_14__and00011:O)| NONE(u16/DataToREG4_14)| 1     |
+u16/DataToREG4_15__and0000(u16/DataToREG4_15__and00001:O)| NONE(u16/DataToREG4_15)| 1     |
+u16/DataToREG4_15__and0001(u16/DataToREG4_15__and00011:O)| NONE(u16/DataToREG4_15)| 1     |
+u16/DataToREG4_1__and0000(u16/DataToREG4_1__and00001:O)  | NONE(u16/DataToREG4_1) | 1     |
+u16/DataToREG4_1__and0001(u16/DataToREG4_1__and00011:O)  | NONE(u16/DataToREG4_1) | 1     |
+u16/DataToREG4_2__and0000(u16/DataToREG4_2__and00001:O)  | NONE(u16/DataToREG4_2) | 1     |
+u16/DataToREG4_2__and0001(u16/DataToREG4_2__and00011:O)  | NONE(u16/DataToREG4_2) | 1     |
+u16/DataToREG4_3__and0000(u16/DataToREG4_3__and00001:O)  | NONE(u16/DataToREG4_3) | 1     |
+u16/DataToREG4_3__and0001(u16/DataToREG4_3__and00011:O)  | NONE(u16/DataToREG4_3) | 1     |
+u16/DataToREG4_4__and0000(u16/DataToREG4_4__and00001:O)  | NONE(u16/DataToREG4_4) | 1     |
+u16/DataToREG4_4__and0001(u16/DataToREG4_4__and00011:O)  | NONE(u16/DataToREG4_4) | 1     |
+u16/DataToREG4_5__and0000(u16/DataToREG4_5__and00001:O)  | NONE(u16/DataToREG4_5) | 1     |
+u16/DataToREG4_5__and0001(u16/DataToREG4_5__and00011:O)  | NONE(u16/DataToREG4_5) | 1     |
+u16/DataToREG4_6__and0000(u16/DataToREG4_6__and00001:O)  | NONE(u16/DataToREG4_6) | 1     |
+u16/DataToREG4_6__and0001(u16/DataToREG4_6__and00011:O)  | NONE(u16/DataToREG4_6) | 1     |
+u16/DataToREG4_7__and0000(u16/DataToREG4_7__and00001:O)  | NONE(u16/DataToREG4_7) | 1     |
+u16/DataToREG4_7__and0001(u16/DataToREG4_7__and00011:O)  | NONE(u16/DataToREG4_7) | 1     |
+u16/DataToREG4_8__and0000(u16/DataToREG4_8__and00001:O)  | NONE(u16/DataToREG4_8) | 1     |
+u16/DataToREG4_8__and0001(u16/DataToREG4_8__and00011:O)  | NONE(u16/DataToREG4_8) | 1     |
+u16/DataToREG4_9__and0000(u16/DataToREG4_9__and00001:O)  | NONE(u16/DataToREG4_9) | 1     |
+u16/DataToREG4_9__and0001(u16/DataToREG4_9__and00011:O)  | NONE(u16/DataToREG4_9) | 1     |
+---------------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 14.720ns (Maximum Frequency: 67.935MHz)
+   Minimum input arrival time before clock: 4.099ns
+   Maximum output required time after clock: 12.877ns
+   Maximum combinational path delay: 6.771ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 14.720ns (frequency: 67.935MHz)
+  Total number of paths / destination ports: 290432 / 703
+-------------------------------------------------------------------------
+Delay:               14.720ns (Levels of Logic = 24)
+  Source:            u13/WriteRegCtrlOut_3 (FF)
+  Destination:       u10/ALUResOut_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: u13/WriteRegCtrlOut_3 to u10/ALUResOut_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q             15   0.591   1.052  u13/WriteRegCtrlOut_3 (u13/WriteRegCtrlOut_3)
+     LUT4:I2->O            1   0.704   0.595  u14/Reg2DataNew_and000126 (u14/Reg2DataNew_and000126)
+     LUT3:I0->O           16   0.704   1.069  u14/Reg2DataNew_and000168 (u14/Reg2DataNew_and0001)
+     LUT3:I2->O            5   0.704   0.668  u14/Reg2DataNew<0>_SW2 (N360)
+     LUT3:I2->O           60   0.704   1.306  Mmux_ALUSrcB2 (ALUSrcB<0>)
+     LUT3:I2->O            1   0.704   0.000  u9/Maddsub_Res_addsub0000_lut<0> (u9/Maddsub_Res_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  u9/Maddsub_Res_addsub0000_cy<0> (u9/Maddsub_Res_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<1> (u9/Maddsub_Res_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<2> (u9/Maddsub_Res_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<3> (u9/Maddsub_Res_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<4> (u9/Maddsub_Res_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<5> (u9/Maddsub_Res_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<6> (u9/Maddsub_Res_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<7> (u9/Maddsub_Res_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<8> (u9/Maddsub_Res_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<9> (u9/Maddsub_Res_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<10> (u9/Maddsub_Res_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<11> (u9/Maddsub_Res_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<12> (u9/Maddsub_Res_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<13> (u9/Maddsub_Res_addsub0000_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  u9/Maddsub_Res_addsub0000_cy<14> (u9/Maddsub_Res_addsub0000_cy<14>)
+     XORCY:CI->O           2   0.804   0.526  u9/Maddsub_Res_addsub0000_xor<15> (u9/Res_addsub0000<15>)
+     LUT2:I1->O            1   0.704   0.424  u10/ALUResOut_mux0001<0>13 (u10/ALUResOut_mux0001<0>13)
+     LUT4:I3->O            1   0.704   0.455  u10/ALUResOut_mux0001<0>174 (u10/ALUResOut_mux0001<0>174)
+     LUT4:I2->O            1   0.704   0.000  u10/ALUResOut_mux0001<0>242 (u10/ALUResOut_mux0001<0>)
+     FDC:D                     0.308          u10/ALUResOut_15
+    ----------------------------------------
+    Total                     14.720ns (8.625ns logic, 6.095ns route)
+                                       (58.6% logic, 41.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u1/CurPC_15'
+  Total number of paths / destination ports: 32 / 16
+-------------------------------------------------------------------------
+Offset:              2.978ns (Levels of Logic = 2)
+  Source:            Ram1Data<15> (PAD)
+  Destination:       u16/DataToIM_15 (LATCH)
+  Destination Clock: u1/CurPC_15 rising
+
+  Data Path: Ram1Data<15> to u16/DataToIM_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           6   1.218   0.748  Ram1Data_15_IOBUF (N294)
+     LUT3:I1->O            1   0.704   0.000  u16/DataToIM_mux0000<15>1 (u16/DataToIM_mux0000<15>)
+     LDCP:D                    0.308          u16/DataToIM_15
+    ----------------------------------------
+    Total                      2.978ns (2.230ns logic, 0.748ns route)
+                                       (74.9% logic, 25.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u10/ALUResOut_15'
+  Total number of paths / destination ports: 36 / 16
+-------------------------------------------------------------------------
+Offset:              4.099ns (Levels of Logic = 3)
+  Source:            Ram1Data<0> (PAD)
+  Destination:       u16/DataToREG4_0 (LATCH)
+  Destination Clock: u10/ALUResOut_15 rising
+
+  Data Path: Ram1Data<0> to u16/DataToREG4_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           4   1.218   0.666  Ram1Data_0_IOBUF (N309)
+     LUT3:I1->O            1   0.704   0.499  u16/DataToREG4_mux0000<0>_SW0 (N21)
+     LUT4:I1->O            3   0.704   0.000  u16/DataToREG4_mux0000<0> (u16/DataToREG4_mux0000<0>)
+     LDCP:D                    0.308          u16/DataToREG4_0
+    ----------------------------------------
+    Total                      4.099ns (2.934ns logic, 1.165ns route)
+                                       (71.6% logic, 28.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1563 / 93
+-------------------------------------------------------------------------
+Offset:              12.877ns (Levels of Logic = 7)
+  Source:            u4/InsOut_12 (FF)
+  Destination:       dyp0<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: u4/InsOut_12 to dyp0<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            30   0.591   1.297  u4/InsOut_12 (u4/InsOut_12)
+     LUT3_D:I2->LO         1   0.704   0.135  u5/ALUOp_or000011 (N853)
+     LUT3:I2->O           13   0.704   1.158  u5/WriteReg_cmp_eq00061 (u5/WriteReg_cmp_eq0006)
+     LUT4_L:I0->LO         1   0.704   0.275  u5/ALUOp<0>210 (u5/ALUOp<0>210)
+     LUT4:I0->O            2   0.704   0.622  u5/ALUOp<0>255 (u5/N18)
+     LUT4_D:I0->O          7   0.704   0.883  u5/ALUOp<0>122 (ALUOpCtrlToREG2<0>)
+     LUT4:I0->O            1   0.704   0.420  Mrom_dyp051 (dyp0_5_OBUF)
+     OBUF:I->O                 3.272          dyp0_5_OBUF (dyp0<5>)
+    ----------------------------------------
+    Total                     12.877ns (8.087ns logic, 4.790ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 7 / 6
+-------------------------------------------------------------------------
+Delay:               6.771ns (Levels of Logic = 4)
+  Source:            clk (PAD)
+  Destination:       Ram2OE (PAD)
+
+  Data Path: clk to Ram2OE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.836  clk_IBUF (clk_IBUF1)
+     LUT2:I1->O            1   0.704   0.000  u16/Ram2OE1 (u16/Ram2OE)
+     MUXF5:I1->O           1   0.321   0.420  u16/Ram2OE_f5 (Ram2OE_OBUF)
+     OBUF:I->O                 3.272          Ram2OE_OBUF (Ram2OE)
+    ----------------------------------------
+    Total                      6.771ns (5.515ns logic, 1.256ns route)
+                                       (81.5% logic, 18.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.35 secs
+ 
+--> 
+
+Total memory usage is 291408 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   35 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
+
